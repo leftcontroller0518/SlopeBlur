@@ -2,6 +2,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](#)
 [![.NET](https://img.shields.io/badge/.NET-10.0-blue.svg)](#)
 [![Downloads](https://img.shields.io/github/downloads/leftcontroller0518/SlopeBlur/total)](https://github.com/leftcontroller0518/SlopeBlur/releases/latest)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dbad5b0d-cb1e-45ac-a8f0-ec8e0424e7b8" />
 
 YukkuriMovieMaker4 (YMM4) 用の映像エフェクトプラグインです。
 画像の輝度（またはアルファ/RGB）の**勾配（スロープ）**に沿ってサンプルを辿り、平均化することで、
