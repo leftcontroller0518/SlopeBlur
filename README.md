@@ -16,25 +16,6 @@ YukkuriMovieMaker4 (YMM4) 用の映像エフェクトプラグインです。
 
 エフェクトは「ぼかし」カテゴリの **Slope Blur** から追加できます。
 
-## ビルド方法
-
-必要なもの:
-
-- Visual Studio 2022 以降（.NET デスクトップ開発ワークロード）と **.NET 10 SDK**
-- Windows 10/11 SDK（`fxc.exe` を使って HLSL をコンパイルします）
-- YMM4 本体（.NET 10 ベースのバージョン）
-
-手順:
-
-1. `Directory.Build.props` の `YMM4DirPath` を、YMM4 の `YukkuriMovieMaker4.exe` があるフォルダに書き換える（**末尾の `\` 必須**）。
-   - 例: `<YMM4DirPath Condition="'$(YMM4DirPath)' == ''">D:\YMM4\</YMM4DirPath>`
-   - コマンドラインから指定する場合: `dotnet build -p:YMM4DirPath="D:\YMM4\"`
-2. `SlopeBlur.sln` を Visual Studio で開き、ビルド（Debug / Release）。
-3. ビルド後、`SlopeBlur.dll` が `<YMM4DirPath>user\plugin\SlopeBlur\` に自動コピーされる。
-4. YMM4 を再起動する。
-
-`fxc.exe` が自動検出されない場合は `Directory.Build.props` に `FxcPath` を指定してください。
-
 ## 構成
 
 ```
